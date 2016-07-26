@@ -16,10 +16,6 @@
 
     BemClass.prototype = {
         _mix: function(mixClass) {
-            if (typeof mixClass !== 'string') {
-                return this;
-            }
-
             return this + ' ' + mixClass;
         },
 
@@ -48,13 +44,11 @@
         format: function(block, element, modifiers) {
             var result = block;
 
-            // Модификаторы для блока
             if (element && typeof element === 'object') {
                 modifiers = element;
                 element = null;
             }
 
-            // Элемент
             if (element) {
                 result = block + '__' + element;
             }
