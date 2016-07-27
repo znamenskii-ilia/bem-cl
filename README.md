@@ -20,7 +20,7 @@ b('icon', { type: 'close' }); // "button__icon button__icon_type_close"
 b('icon', { animate: true }); // "button__icon button__icon_animate"
 b('icon', { animate: false }); // "button__icon"
 // element mix
-b('icon').mix('material-icon'); // "button__icon material-icon"
+b('icon').mix('material-icons'); // "button__icon material-icons"
 ```
 
 
